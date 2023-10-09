@@ -63,6 +63,16 @@ namespace Udito.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap glassFull {
+            get {
+                object obj = ResourceManager.GetObject("glassFull", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1428260936_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1428260936-612x612", resourceCulture);

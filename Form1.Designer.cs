@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnToltes = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbGlass = new System.Windows.Forms.PictureBox();
             this.txbAtmero = new System.Windows.Forms.TextBox();
             this.txbSebesseg = new System.Windows.Forms.TextBox();
             this.txbIdo = new System.Windows.Forms.TextBox();
@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGlass)).BeginInit();
             this.SuspendLayout();
             // 
             // btnToltes
@@ -52,14 +52,14 @@
             this.btnToltes.UseVisualStyleBackColor = true;
             this.btnToltes.Click += new System.EventHandler(this.btnToltes_Click);
             // 
-            // pictureBox1
+            // pbGlass
             // 
-            this.pictureBox1.Image = global::Udito.Properties.Resources.istockphoto_1428260936_612x612;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(473, 426);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbGlass.Image = global::Udito.Properties.Resources.istockphoto_1428260936_612x612;
+            this.pbGlass.Location = new System.Drawing.Point(12, 12);
+            this.pbGlass.Name = "pbGlass";
+            this.pbGlass.Size = new System.Drawing.Size(473, 426);
+            this.pbGlass.TabIndex = 1;
+            this.pbGlass.TabStop = false;
             // 
             // txbAtmero
             // 
@@ -87,6 +87,7 @@
             // 
             // txbKitoltott
             // 
+            this.txbKitoltott.Enabled = false;
             this.txbKitoltott.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txbKitoltott.Location = new System.Drawing.Point(491, 412);
             this.txbKitoltott.Name = "txbKitoltott";
@@ -99,9 +100,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(502, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.Size = new System.Drawing.Size(173, 25);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Cső átmérője";
+            this.label1.Text = "Cső átmérője (cm)";
             // 
             // label2
             // 
@@ -109,9 +110,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(507, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 25);
+            this.label2.Size = new System.Drawing.Size(261, 25);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Áramlás sebessége";
+            this.label2.Text = "Áramlás sebessége (ml/sec)";
             // 
             // label3
             // 
@@ -119,9 +120,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(507, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 25);
+            this.label3.Size = new System.Drawing.Size(172, 25);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Kitöltés ideje";
+            this.label3.Text = "Kitöltés ideje (sec)";
             // 
             // label4
             // 
@@ -129,9 +130,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(491, 375);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 25);
+            this.label4.Size = new System.Drawing.Size(221, 25);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Kitöltött mennyiség:";
+            this.label4.Text = "Kitöltött mennyiség (ml):";
             // 
             // Form1
             // 
@@ -147,11 +148,11 @@
             this.Controls.Add(this.txbIdo);
             this.Controls.Add(this.txbSebesseg);
             this.Controls.Add(this.txbAtmero);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbGlass);
             this.Controls.Add(this.btnToltes);
             this.Name = "Form1";
             this.Text = "Üditő";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGlass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +161,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnToltes;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbGlass;
         private System.Windows.Forms.TextBox txbAtmero;
         private System.Windows.Forms.TextBox txbSebesseg;
         private System.Windows.Forms.TextBox txbIdo;
